@@ -7,6 +7,7 @@ Bienvenido a mi repositorio de **scripts de Bash**. Este repositorio contiene un
 | Nombre del Script | Descripción | Dependencias |
 |-------------------|-------------|--------------|
 | **CriptoBusqueda**   | Consulta el valor de una criptomoneda en diferentes monedas | `curl`, `jq` |
+| **ManageDatabases** | Gestión de bases de datos utilizando docker | `docker` |
 
 ## Instalación de Dependencias
 
