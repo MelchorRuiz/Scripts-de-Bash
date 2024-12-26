@@ -8,6 +8,7 @@ Bienvenido a mi repositorio de **scripts de Bash**. Este repositorio contiene un
 |-------------------|-------------|--------------|
 | **CriptoBusqueda**   | Consulta el valor de una criptomoneda en diferentes monedas | `curl`, `jq` |
 | **ManageDatabases** | Gestión de bases de datos utilizando docker | `docker` |
+| **CreateRustProject** | Crea un nuevo proyecto Rust utilizando Docker | `docker` |
 
 ## Instalación de Dependencias
 
