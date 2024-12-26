@@ -20,7 +20,7 @@ Si deseas comenzar, puedes clonar el repositorio usando el siguiente comando:
 
 ```bash
 git clone https://github.com/MelchorRuiz/Scripts-de-Bash
-cd Scripts-de-Bash
+cd Scripts-de-Bash/scripts
 ```
 
 ### 2. Ejecutar un Script
