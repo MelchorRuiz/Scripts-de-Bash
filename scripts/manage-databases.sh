@@ -11,11 +11,13 @@ RESET="\e[0m"
 declare -A START_COMMANDS=(
     ["mysql"]="docker run --name mysql -d -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -v mysql_data:/var/lib/mysql mysql"
     ["mongo"]="docker run --name mongo -d -p 27017:27017 -v mongodb_data:/data/db mongo"
+    ["redis"]="docker run --name redis -d -p 6379:6379 redis"
 )
 
 declare -A SHELL_COMMANDS=(
     ["mysql"]="docker exec -it mysql mysql -u root -proot"
     ["mongo"]="docker exec -it mongo mongosh"
+    ["redis"]="docker exec -it redis redis-cli"
 )
 
 function ctrl_c() {
