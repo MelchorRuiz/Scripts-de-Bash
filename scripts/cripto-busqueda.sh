@@ -15,8 +15,14 @@ function ctrl_c() {
 
 trap ctrl_c INT
 
+if [ -z "$COINGECKO_API_KEY" ]; then
+    echo -e "\n${RED}[!]${RESET} Debes definir la variable de entorno COINGECKO_API_KEY con tu clave de API de CoinGecko."
+    echo -e "${RED}[!]${RESET} Ejecuta ${MAGENTA}export COINGECKO_API_KEY=tu_clave_de_api${RESET} para definirla."
+    exit 1
+fi
+
 API_URL="https://api.coingecko.com/api/v3"
-API_KEY="YOUR_API_KEY"
+API_KEY="$COINGECKO_API_KEY"
 
 currency="mxn"
 
